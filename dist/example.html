@@ -4,13 +4,70 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="css/copaair-dest-select-styles.css" rel="stylesheet">
+
+    <!-- Styles for example only -->
+    <style>
+        body {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 700px;
+        }
+
+        input {
+            padding: 5px;
+            font-size: 18px;
+        }
+
+    </style>
 </head>
 <body>
-    <input class="js-copaair-dest-select-input" placeholder="Desde" data-value="origin">
-    <input class="js-copaair-dest-select-input" placeholder="Hacia" data-value="destination">
+    <h1>Selección de destinos</h1>
 
-    <input class="js-copaair-dest-select-value-origin" type="hidden">
-    <input class="js-copaair-dest-select-value-destination" type="hidden">
+    <h2>Requisitos</h2>
+
+    <ol>
+        <li>Incluir markup HTML del <i>lightbox</i> con la lista de destinos.</li>
+        <li>Incluir archivo JavaScript <code>js/copaair-dest-select.js</code></li>
+        <li>Incluir archivo CSS <code>css/copaair-dest-select-styles.css</code></li>
+    </ol>
+
+    <p>Un <code>&lt;input&gt;</code> de una forma va a abrir el <i>lightbox</i> para escoger
+       el destino <strong>solo si tiene la clase <code>js-copaair-dest-select-input</code></strong>.</p>
+
+    <p>El valor entrado en este <code>&lt;input&gt;</code> es el nombre completo y el código de destino escogido.</p>
+
+    <p>Si sólo se necesita el código de aereopuerto solamente como valor de un input, como por ejempo para una búsqueda de vuelos,
+        el JavaScript lo insertará como valor en un <code>&lt;input&gt;</code> con las clases
+        <code>js-copaair-dest-select-value-origin</code> y <code>js-copaair-dest-select-value-destination</code>
+        respectivamente. Estos inputs pueden ser <code>type="hidden"</code> para que no sean visibles
+        al usuario.
+    </p>
+
+    <p>Para diferenciar entre estas dos clases, hay que asignar un atributo data en los inputs que abren
+    el <em>lightbox</em> para que sepan donde asignar el código del destino como valor.</p>
+
+    <h2>Ejemplo</h2>
+
+    <code><pre>
+&lt;input class="js-copaair-dest-select-input" placeholder="Desde" data-value-type="origin"&gt;
+&lt;input class="js-copaair-dest-select-input" placeholder="Hacia" data-value-type="destination"&gt;
+
+&lt;input class="js-copaair-dest-select-value-origin"&gt;
+&lt;input class="js-copaair-dest-select-value-destination"&gt;
+    </pre></code>
+
+    <form>
+        <div>
+            <input class="js-copaair-dest-select-input" placeholder="Desde" data-value-type="origin">
+            <input class="js-copaair-dest-select-input" placeholder="Hacia" data-value-type="destination">
+        </div>
+        <div>
+            <p>Los siguientes inputs estarían escondidos con <code>type="hidden"</code></p>
+            <input class="js-copaair-dest-select-value-origin">
+            <input class="js-copaair-dest-select-value-destination">
+        </div>
+    </form>
 
     <section class="copaair-dest-select  copaair-hidden  js-copaair-dest-select-dialog">
         <h1 class="copaair-dest-select-header">
