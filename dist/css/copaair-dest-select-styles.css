@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.copaair-hidden {
+  display: none !important; }
+
+.copaair-dest-select-content {
+  margin-left: -12px; }
+
+.copaair-dest-select-col {
+  display: inline-block;
+  padding-left: 12px;
+  vertical-align: top; }
+
+.copaair-dest-select {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 830px;
+  background-color: #fff;
+  border: 8px solid #C9CACA;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+  font-family: Calibri, Arial, sans-serif;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.copaair-dest-select-header {
+  margin: 0 0 24px;
+  padding: 15px;
+  background: linear-gradient(to bottom, #005AA6 0%, #00379A 100%);
+  border: 1px solid #052E4D;
+  border-bottom: 2px solid #023A6B;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75), inset 0 0 20px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1; }
+
+.copaair-dest-select-tablist {
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 400px;
+  list-style: none;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAGACAYAAACHubNDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANpJREFUSMfFVdsRwzAIE96v23ST7mv60+s1B8a8nObLpwASgsT0eL4IAA98nsuBIkguuHgY3VnjWPo50qIbRh2sEW9BEgg7loQuwUYMfmPcyGbnSSDfYBJZC4VGg3BIhSoDOjvW7JJ0045BQTV2OAxn3R/dOo8MivRVRJCSSvlR5sdEtQmG0ummReq0pcu60JLwP6ZzZx0cm7tbM4vfqY50DcW9ACyuEq71zhE3PMJ0CqQqL2J0RMrYBUuFBpeHlNdZ7Cg4U+nGYTYFz1R6e8Fig9ztM1Kv4p/DG1cei1SnsnOoAAAAAElFTkSuQmCC") no-repeat top right; }
+  .copaair-dest-select-tablist > li {
+    display: block;
+    padding: 10px;
+    color: #4D7493;
+    cursor: pointer; }
+    .copaair-dest-select-tablist > li:hover,
+    .copaair-dest-select-tablist > li:focus {
+      background-color: #f0f0f0; }
+  .copaair-dest-select-tablist .copaair-dest-select-tab-active,
+  .copaair-dest-select-tablist .copaair-dest-select-tab-active:hover,
+  .copaair-dest-select-tablist .copaair-dest-select-tab-active:focus {
+    background-color: #006;
+    color: #fff;
+    cursor: default;
+    font-weight: bold; }
+
+.copaair-dest-select-panel {
+  margin-bottom: 12px; }
+  .copaair-dest-select-panel h3 {
+    margin: 0 0 6px;
+    color: #004982;
+    font-size: 15px; }
+
+.copaair-dest-select-list {
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none; }
+  .copaair-dest-select-list a {
+    display: block;
+    padding: 0.3em 0.3em;
+    color: #004982;
+    font-size: 13px;
+    text-decoration: none; }
+    .copaair-dest-select-list a:before {
+      margin-right: .5em;
+      content: "•";
+      color: #9E7A31; }
+    .copaair-dest-select-list a small {
+      color: #7C8284;
+      font-size: 1em; }
+    .copaair-dest-select-list a:hover,
+    .copaair-dest-select-list a:focus {
+      background-color: #006;
+      color: #fff; }
+      .copaair-dest-select-list a:hover small,
+      .copaair-dest-select-list a:focus small {
+        color: #fff; }
+      .copaair-dest-select-list a:hover:before,
+      .copaair-dest-select-list a:focus:before {
+        color: #fff; }
+
+.copaair-dest-select-close {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  display: block;
+  width: 29px;
+  height: 29px;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAYAAABWk2cPAAABnUlEQVR42r3XPUjDQBgG4FSrrp2KKIL4tziIi6DiIOLgKCKIDu1ghTqKVRx0cHFwE/fq4KqLSzZRFBfJIC5asFIQB7VKKVgQPt98GChJrrkjPy88FI7LvaRtkotGRLKaYRiWYA02YRVmoB00WTKTJuAIvqhxDNiAhJ/SAdBJPd+Qg7hqaQqq5C830Clbuk3BpQh9XqVZCj4FSIpKR6BG4USHmL00DvfgSLlSI6PwQTLBPJ4vSMpeuihaJDF7whzF6nOL0FJfeku2PL9VeAFtOs8aFWPcPpePd8m8VdpLgqT3r3gRZ7G4EPg4QU6t0gyQSvHZ9Qsh/ClfyPm0Sg+AVIpBOCaRLo1PmaNerF7IGTVLz0kyef3JrZDHFTLJZxpxKZ/pYcRfL/+mKxH+kcoQM0v7w7tkxNep6S6im8NCfWk6gttgCVrtT5mHkG/4y27P03H4DenRdgFNLqUsR8GnBB1ee6Q9Ci6vMCi7G8zCD/mLAd2q+94huCT1VGEH2vzs8KfgGN49yh7/y5Jea6q+y4xBBrZgF9ZhDnpAk/UHOhlJa+I1iaUAAAAASUVORK5CYII=");
+  border: 0;
+  cursor: pointer; }
+  .copaair-dest-select-close:hover,
+  .copaair-dest-select-close:focus {
+    opacity: .9; }
+
+/*# sourceMappingURL=copaair-dest-select-styles.css.map */

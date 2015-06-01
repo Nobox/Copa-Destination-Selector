@@ -1,0 +1,7 @@
+{
+    "bowerDir": "bower_components",
+    "srcDir": "src",
+    "assetsDir": "src/",
+    "cssOutput": "dist/css",
+    "jsOutput": "dist/js"
+}
