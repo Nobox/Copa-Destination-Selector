@@ -3,6 +3,8 @@ var elixir = require('laravel-elixir');
 var markdown = require('gulp-markdown');
 require('laravel-elixir-browserify').init('bundler');
 
+elixir.config.sourcemaps = false;
+
 elixir.extend('markdown', function() {
 
     gulp.task('markdown', function() {

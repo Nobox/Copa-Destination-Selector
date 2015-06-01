@@ -2,6 +2,10 @@ var $ = require('jquery');
 
 class CopaairDestSelect {
     $dialog = $('.js-copaair-dest-select-dialog');
+    $valueInputs = {
+        'origin': $('.js-copaair-dest-select-value-origin'),
+        'destination': $('.js-copaair-dest-select-value-destination')
+    };
     $activeInput = null;
 
     init() {
@@ -12,13 +16,19 @@ class CopaairDestSelect {
         this.$dialog.removeClass('copaair-hidden');
     }
 
-    closeDialog(valueText) {
+    closeDialog() {
         this.$dialog.addClass('copaair-hidden');
-        this.populateDestination(valueText);
     }
 
     populateDestination(value) {
         this.$activeInput.val(value);
+    }
+
+    populateDestinationCode(code) {
+        var destinationType = this.$activeInput.data('value-type');
+        this.$valueInputs[destinationType].each(function() {
+            $(this).val(code);
+        });
     }
 
     events() {
@@ -58,6 +68,8 @@ class CopaairDestSelect {
 
         this.$dialog.on('click.copaair', '.js-copaair-dest-select-close', (e) => {
             e.preventDefault();
+
+            this.populateDestination('');
             this.closeDialog();
         });
 
@@ -65,7 +77,9 @@ class CopaairDestSelect {
             e.preventDefault();
             var $this = $(e.target);
 
-            this.closeDialog($this.text());
+            this.populateDestination($this.text());
+            this.populateDestinationCode($this.data('code'));
+            this.closeDialog();
         });
 
     }
