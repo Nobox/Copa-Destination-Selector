@@ -1,12 +1,6 @@
 {
   "browserify": {
     "transform": [
-      [
-        "babelify",
-        {
-          "stage": 0
-        }
-      ],
       "browserify-shim"
     ]
   },
@@ -14,13 +8,9 @@
     "jquery": "global:jQuery"
   },
   "devDependencies": {
-    "babelify": "^6.1.0",
-    "browserify": "^10.2.0",
     "browserify-shim": "^3.8.6",
-    "gulp": "^3.8.8",
     "gulp-markdown": "^1.0.0",
-    "laravel-elixir": "^2.2.0",
-    "laravel-elixir-browserify": "^0.8.0"
+    "laravel-elixir": "^3.0.0"
   },
   "private": true
 }

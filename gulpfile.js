@@ -1,31 +1,50 @@
 var gulp = require('gulp');
-var elixir = require('laravel-elixir');
 var markdown = require('gulp-markdown');
-require('laravel-elixir-browserify').init('bundler');
+var Elixir = require('laravel-elixir');
+var Task = Elixir.Task;
+var config = Elixir.config;
 
-elixir.config.sourcemaps = false;
+// Disable sourcemaps
+config.sourcemaps = false;
 
-elixir.extend('markdown', function() {
+// Add IE9 support to autoprefixer.
+config.css.autoprefix.options = [{
+    browsers: ['last 2 versions', 'ie 9'],
+    cascade: false
+}];
 
-    gulp.task('markdown', function() {
+// Enable more experimental Babel features
+config.js.browserify.transformers = [
+    {
+        name: 'babelify',
+        options: {
+            stage: 0,
+            compact: false,
+            ignore: config.bowerDir
+        }
+    }
+];
+
+// Enable watchify polling for our NFS-mounted VMs.
+config.js.browserify.watchify.options.poll = true;
+
+Elixir.extend('markdown', function() {
+
+    new Task('markdown', function() {
         return gulp.src('README.md')
             .pipe(markdown())
             .pipe(gulp.dest('dist'));
     });
 
-    return this.queueTask('markdown');
-
 });
 
-elixir(function(mix) {
+Elixir(function(mix) {
     mix
         .sass('styles.scss', 'dist/css/copaair-dest-select-styles.css', {
-            includePaths: ['./node_modules', elixir.config.bowerDir]
+            includePaths: ['./node_modules', config.bowerDir]
         })
 
-        .bundler('index.js', {
-            rename: 'copaair-dest-select.js'
-        })
+        .browserify('index.js', config.get('public.js.outputFolder') + '/copaair-dest-select.js')
 
         .markdown()
     ;
