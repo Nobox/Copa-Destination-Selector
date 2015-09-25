@@ -6,28 +6,36 @@
     <div class="copaair-dest-select-content">
         <ul class="copaair-dest-select-tablist  copaair-dest-select-col  copaair-dest-select-1/3  js-copaair-dest-select-tablist"
             role="tablist">
+            <!-- Generar lista de regiones dinámicamente en el mismo format HTML
+                 para cada región. Estos son tres ejemplos: -->
+
             <li class="copaair-dest-select-tab-active" id="copaair-tab-northamerica" role="tab" aria-controls="copaair-tabpanel-northamerica" aria-selected="true">
                 Norteamérica
             </li>
+
             <li id="copaair-tab-southamerica" role="tab" aria-controls="copaair-tabpanel-southamerica">
                 Suramérica
             </li>
+
             <li id="copaair-tab-centralamerica" role="tab" aria-controls="copaair-tabpanel-centralamerica">
                 El Caribe y Centroamérica
             </li>
         </ul
-        ><div class="copaair-dest-select-panel  copaair-dest-select-col  copaair-dest-select-2/3  js-copaair-dest-select-panel"
+        ><div class="copaair-dest-select-panel  js-copaair-dest-select-panel"
              id="copaair-tabpanel-northamerica"
              role="tabpanel"
              aria-labelledby="copaair-tab-northamerica"
              aria-hidden="false">
-            <div class="copaair-dest-select-col  copaair-dest-select-1/2">
+
+            <div class="copaair-dest-item">
                 <h3>Canadá</h3>
                 <ul class="copaair-dest-select-list">
                     <li><a href="#" data-code="YUL">Montreal, Canadá <small>(YUL)</small></a></li>
                     <li><a href="#" data-code="YYZ">Toronto, Canadá <small>(YYZ)</small></a></li>
                 </ul>
+            </div>
 
+            <div class="copaair-dest-item">
                 <h3>EE.UU.</h3>
                 <ul class="copaair-dest-select-list">
                     <li><a href="#" data-code="BOS">Boston, EE.UU. <small>(BOS)</small></a></li>
@@ -42,8 +50,9 @@
                     <li><a href="#" data-code="TPA">Tampa, EE.UU. <small>(TPA)</small></a></li>
                     <li><a href="#" data-code="IAD">Washington, EE.UU. <small>(IAD)</small></a></li>
                 </ul>
-            </div
-            ><div class="copaair-dest-select-col  copaair-dest-select-1/2">
+            </div>
+
+            <div class="copaair-dest-item">
                 <h3>México</h3>
                 <ul class="copaair-dest-select-list">
                     <li><a href="#" data-code="CUN">Cancún, México <small>(CUN)</small></a></li>
@@ -54,6 +63,7 @@
                     <li><a href="#" data-code="VSA">Villahermosa, México <small>(VSA)</small></a></li>
                 </ul>
             </div>
+
         </div
         ><div class="copaair-dest-select-panel  copaair-dest-select-col  copaair-dest-select-2/3  copaair-hidden  js-copaair-dest-select-panel"
              id="copaair-tabpanel-southamerica"

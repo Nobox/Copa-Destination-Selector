@@ -75,30 +75,209 @@
         </h1>
 
         <div class="copaair-dest-select-content">
-            <ul class="copaair-dest-select-tablist  copaair-dest-select-col  copaair-dest-select-1/3  js-copaair-dest-select-tablist"
+            <ul class="copaair-dest-select-tablist  js-copaair-dest-select-tablist"
                 role="tablist">
-                <li class="copaair-dest-select-tab-active" id="copaair-tab-northamerica" role="tab" aria-controls="copaair-tabpanel-northamerica" aria-selected="true">
-                    Norteamérica
+
+                <li class="copaair-dest-select-tab-active" id="copaair-tab-canada" role="tab" aria-controls="copaair-tabpanel-canada" aria-selected="true">
+                    Canada
                 </li>
-                <li id="copaair-tab-southamerica" role="tab" aria-controls="copaair-tabpanel-southamerica">
-                    Suramérica
+
+                <li id="copaair-tab-caribbean" role="tab" aria-controls="copaair-tabpanel-caribbean">
+                    El Caribe
                 </li>
+
                 <li id="copaair-tab-centralamerica" role="tab" aria-controls="copaair-tabpanel-centralamerica">
-                    El Caribe y Centroamérica
+                    Centroamérica
                 </li>
-            </ul
-            ><div class="copaair-dest-select-panel  copaair-dest-select-col  copaair-dest-select-2/3  js-copaair-dest-select-panel"
-                 id="copaair-tabpanel-northamerica"
+
+                <li id="copaair-tab-colombia" role="tab" aria-controls="copaair-tabpanel-colombia">
+                    Colombia
+                </li>
+
+                <li id="copaair-tab-brazil" role="tab" aria-controls="copaair-tabpanel-brazil">
+                    Brasil
+                </li>
+
+                <li id="copaair-tab-mexico" role="tab" aria-controls="copaair-tabpanel-mexico">
+                    México
+                </li>
+
+                <li id="copaair-tab-usa" role="tab" aria-controls="copaair-tabpanel-usa">
+                    Estados Unidos
+                </li>
+
+                <li id="copaair-tab-southamerica" role="tab" aria-controls="copaair-tabpanel-southamerica">
+                    Resto de Suramérica
+                </li>
+            </ul>
+
+            <!-- Canada -->
+            <div class="copaair-dest-select-panel  js-copaair-dest-select-panel"
+                 id="copaair-tabpanel-canada"
                  role="tabpanel"
-                 aria-labelledby="copaair-tab-northamerica"
-                 aria-hidden="false">
-                <div class="copaair-dest-select-col  copaair-dest-select-1/2">
-                    <h3>Canadá</h3>
+                 aria-labelledby="copaair-tab-canada"
+                 aria-hidden="true">
+
+                <div class="copaair-dest-column">
+                    <h3>Destinos</h3>
                     <ul class="copaair-dest-select-list">
                         <li><a href="#" data-code="YUL">Montreal, Canadá <small>(YUL)</small></a></li>
                         <li><a href="#" data-code="YYZ">Toronto, Canadá <small>(YYZ)</small></a></li>
                     </ul>
+                </div>
 
+            </div>
+
+            <!-- Caribe -->
+            <div class="copaair-dest-select-panel  copaair-hidden  js-copaair-dest-select-panel"
+                 id="copaair-tabpanel-caribbean"
+                 role="tabpanel"
+                 aria-labelledby="copaair-tab-caribbean"
+                 aria-hidden="true">
+
+                <div class="copaair-dest-column">
+                    <h3>Destinos</h3>
+                    <ul class="copaair-dest-select-list">
+                        <li><a href="#" data-code="AUA">Aruba, Aruba <small>(AUA)</small></a></li>
+                        <li><a href="#" data-code="CUR">Curazao, Curazao <small>(CUR)</small></a></li>
+                        <li><a href="#" data-code="KIN">Kingston, Jamaica <small>(KIN)</small></a></li>
+                        <li><a href="#" data-code="HAV">La Habana, Cuba <small>(HAV)</small></a></li>
+                        <li><a href="#" data-code="MBJ">Montego Bay, Jamaica <small>(MBJ)</small></a></li>
+                        <li><a href="#" data-code="NAS">Nassau, Bahamas <small>(NAS)</small></a></li>
+                        <li><a href="#" data-code="POS">Puerto España, Trinidad y Tobago <small>(POS)</small></a></li>
+                        <li><a href="#" data-code="PAP">Puerto Príncipe, Haití <small>(PAP)</small></a></li>
+                        <li><a href="#" data-code="PUJ">Punta Cana, República Dominicana <small>(PUJ)</small></a></li>
+                        <li><a href="#" data-code="SJU">San Juan, Puerto Rico <small>(SJU)</small></a></li>
+                        <li><a href="#" data-code="SNU">Santa Clara, Cuba <small>(SNU)</small></a></li>
+                        <li><a href="#" data-code="STI">Santiago de los Caballeros, República Dominicana <small>(STI)</small></a></li>
+                        <li><a href="#" data-code="SDQ">Santo Domingo, República Dominicana <small>(SDQ)</small></a></li>
+                        <li><a href="#" data-code="SXM">St Maarten, St Maarten <small>(SXM)</small></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Centroamérica -->
+            <div class="copaair-dest-select-panel  copaair-hidden  js-copaair-dest-select-panel"
+                 id="copaair-tabpanel-centralamerica"
+                 role="tabpanel"
+                 aria-labelledby="copaair-tab-centralamerica"
+                 aria-hidden="true">
+
+                <div class="copaair-dest-column">
+                    <h3>Costa Rica</h3>
+                    <ul class="copaair-dest-select-list">
+                        <li><a href="#" data-code="LIR">Liberia, Costa Rica <small>(LIR)</small></a></li>
+                        <li><a href="#" data-code="SJO">San José, Costa Rica <small>(SJO)</small></a></li>
+                    </ul>
+
+                    <h3>El Salvador</h3>
+                    <ul class="copaair-dest-select-list">
+                        <li><a href="#" data-code="SAL">San Salvador, El Salvador <small>(SAL)</small></a></li>
+                    </ul>
+
+                    <h3>Guatemala</h3>
+                    <ul class="copaair-dest-select-list">
+                        <li><a href="#" data-code="GUA">Ciudad de Guatemala, Guatemala <small>(GUA)</small></a></li>
+                    </ul>
+                </div>
+
+                <div class="copaair-dest-column">
+                    <h3>Honduras</h3>
+                    <ul class="copaair-dest-select-list">
+                        <li><a href="#" data-code="SAP">San Pedro Sula, Honduras <small>(SAP)</small></a></li>
+                        <li><a href="#" data-code="TGU">Tegucigalpa, Honduras <small>(TGU)</small></a></li>
+                    </ul>
+
+                    <h3>Nicaragua</h3>
+                    <ul class="copaair-dest-select-list">
+                        <li><a href="#" data-code="MGA">Managua, Nicaragua <small>(MGA)</small></a></li>
+                    </ul>
+
+                    <h3>Panamá</h3>
+                    <ul class="copaair-dest-select-list">
+                        <li><a href="#" data-code="DAV">David, Chiriquí, Panamá <small>(DAV)</small></a></li>
+                        <li><a href="#" data-code="PTY">Panamá, Panamá <small>(PTY)</small></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Colombia -->
+            <div class="copaair-dest-select-panel  copaair-hidden  js-copaair-dest-select-panel"
+                 id="copaair-tabpanel-colombia"
+                 role="tabpanel"
+                 aria-labelledby="copaair-tab-colombia"
+                 aria-hidden="true">
+
+                <div class="copaair-dest-column">
+                    <h3>Destinos</h3>
+                    <ul class="copaair-dest-select-list">
+                        <li><a href="#" data-code="BAQ">Barranquilla, Colombia <small>(BAQ)</small></a></li>
+                        <li><a href="#" data-code="BOG">Bogotá, Colombia <small>(BOG)</small></a></li>
+                        <li><a href="#" data-code="BGA">Bucaramanga, Colombia <small>(BGA)</small></a></li>
+                        <li><a href="#" data-code="CLO">Cali, Colombia <small>(CLO)</small></a></li>
+                        <li><a href="#" data-code="CTG">Cartagena, Colombia <small>(CTG)</small></a></li>
+                        <li><a href="#" data-code="CUC">Cúcuta, Colombia <small>(CUC)</small></a></li>
+                        <li><a href="#" data-code="MDE">Medellín, Colombia <small>(MDE)</small></a></li>
+                        <li><a href="#" data-code="PEI">Pereira, Colombia <small>(PEI)</small></a></li>
+                        <li><a href="#" data-code="ADZ">San Andrés Isla, Colombia <small>(ADZ)</small></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Brasil -->
+            <div class="copaair-dest-select-panel  copaair-hidden  js-copaair-dest-select-panel"
+                 id="copaair-tabpanel-brazil"
+                 role="tabpanel"
+                 aria-labelledby="copaair-tab-brazil"
+                 aria-hidden="true">
+
+                <div class="copaair-dest-column">
+                    <h3>Destinos</h3>
+                    <ul class="copaair-dest-select-list">
+                        <li><a href="#" data-code="CNF">Belo Horizonte, Brasil <small>(CNF)</small></a></li>
+                        <li><a href="#" data-code="BSB">Brasilia, Brasil <small>(BSB)</small></a></li>
+                        <li><a href="#" data-code="VCP">Campinas, Brasil <small>(VCP)</small></a></li>
+                        <li><a href="#" data-code="MAO">Manaus, Brasil <small>(MAO)</small></a></li>
+                        <li><a href="#" data-code="POA">Porto Alegre, Brasil <small>(POA)</small></a></li>
+                        <li><a href="#" data-code="REC">Recife, Brasil <small>(REC)</small></a></li>
+                        <li><a href="#" data-code="GIG">Río de Janeiro, Brasil <small>(GIG)</small></a></li>
+                        <li><a href="#" data-code="GRU">São Paulo, Brasil <small>(GRU)</small></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- México -->
+            <div class="copaair-dest-select-panel  copaair-hidden  js-copaair-dest-select-panel"
+                 id="copaair-tabpanel-mexico"
+                 role="tabpanel"
+                 aria-labelledby="copaair-tab-mexico"
+                 aria-hidden="true">
+
+                <div class="copaair-dest-column">
+                    <h3>México</h3>
+                    <ul class="copaair-dest-select-list">
+                        <li><a href="#" data-code="CUN">Cancún, México <small>(CUN)</small></a></li>
+                        <li><a href="#" data-code="GDL">Guadalajara, México <small>(GDL)</small></a></li>
+                        <li><a href="#" data-code="MEX">México DF, México <small>(MEX)</small></a></li>
+                        <li><a href="#" data-code="MTY">Monterrey, México <small>(MTY)</small></a></li>
+                        <li><a href="#" data-code="PBC">Puebla, México <small>(PBC)</small></a></li>
+                        <li><a href="#" data-code="VSA">Villahermosa, México <small>(VSA)</small></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Estados Unidos -->
+            <div class="copaair-dest-select-panel  copaair-hidden  js-copaair-dest-select-panel"
+                 id="copaair-tabpanel-usa"
+                 role="tabpanel"
+                 aria-labelledby="copaair-tab-usa"
+                 aria-hidden="true">
+
+                <div class="copaair-dest-column">
                     <h3>EE.UU.</h3>
                     <ul class="copaair-dest-select-list">
                         <li><a href="#" data-code="BOS">Boston, EE.UU. <small>(BOS)</small></a></li>
@@ -113,25 +292,18 @@
                         <li><a href="#" data-code="TPA">Tampa, EE.UU. <small>(TPA)</small></a></li>
                         <li><a href="#" data-code="IAD">Washington, EE.UU. <small>(IAD)</small></a></li>
                     </ul>
-                </div
-                ><div class="copaair-dest-select-col  copaair-dest-select-1/2">
-                    <h3>México</h3>
-                    <ul class="copaair-dest-select-list">
-                        <li><a href="#" data-code="CUN">Cancún, México <small>(CUN)</small></a></li>
-                        <li><a href="#" data-code="GDL">Guadalajara, México <small>(GDL)</small></a></li>
-                        <li><a href="#" data-code="MEX">México DF, México <small>(MEX)</small></a></li>
-                        <li><a href="#" data-code="MTY">Monterrey, México <small>(MTY)</small></a></li>
-                        <li><a href="#" data-code="PBC">Puebla, México <small>(PBC)</small></a></li>
-                        <li><a href="#" data-code="VSA">Villahermosa, México <small>(VSA)</small></a></li>
-                    </ul>
                 </div>
-            </div
-            ><div class="copaair-dest-select-panel  copaair-dest-select-col  copaair-dest-select-2/3  copaair-hidden  js-copaair-dest-select-panel"
+
+            </div>
+
+            <!-- Resto de Suramérica -->
+            <div class="copaair-dest-select-panel  copaair-hidden  js-copaair-dest-select-panel"
                  id="copaair-tabpanel-southamerica"
                  role="tabpanel"
                  aria-labelledby="copaair-tab-southamerica"
                  aria-hidden="true">
-                <div class="copaair-dest-select-col  copaair-dest-select-1/3">
+
+                <div class="copaair-dest-column">
                     <h3>Argentina</h3>
                     <ul class="copaair-dest-select-list">
                         <li><a href="#" data-code="EZE">Buenos Aires, Argentina <small>(EZE)</small></a></li>
@@ -143,35 +315,9 @@
                         <li><a href="#" data-code="VVI">Santa Cruz de la Sierra, Bolivia <small>(VVI)</small></a></li>
                     </ul>
 
-                    <h3>Brasil</h3>
-                    <ul class="copaair-dest-select-list">
-                        <li><a href="#" data-code="CNF">Belo Horizonte, Brasil <small>(CNF)</small></a></li>
-                        <li><a href="#" data-code="BSB">Brasilia, Brasil <small>(BSB)</small></a></li>
-                        <li><a href="#" data-code="VCP">Campinas, Brasil <small>(VCP)</small></a></li>
-                        <li><a href="#" data-code="MAO">Manaus, Brasil <small>(MAO)</small></a></li>
-                        <li><a href="#" data-code="POA">Porto Alegre, Brasil <small>(POA)</small></a></li>
-                        <li><a href="#" data-code="REC">Recife, Brasil <small>(REC)</small></a></li>
-                        <li><a href="#" data-code="GIG">Río de Janeiro, Brasil <small>(GIG)</small></a></li>
-                        <li><a href="#" data-code="GRU">São Paulo, Brasil <small>(GRU)</small></a></li>
-                    </ul>
-                </div
-                ><div class="copaair-dest-select-col  copaair-dest-select-1/3">
                     <h3>Chile</h3>
                     <ul class="copaair-dest-select-list">
                         <li><a href="#" data-code="SCL">Santiago de Chile, Chile <small>(SCL)</small></a></li>
-                    </ul>
-
-                    <h3>Colombia</h3>
-                    <ul class="copaair-dest-select-list">
-                        <li><a href="#" data-code="BAQ">Barranquilla, Colombia <small>(BAQ)</small></a></li>
-                        <li><a href="#" data-code="BOG">Bogotá, Colombia <small>(BOG)</small></a></li>
-                        <li><a href="#" data-code="BGA">Bucaramanga, Colombia <small>(BGA)</small></a></li>
-                        <li><a href="#" data-code="CLO">Cali, Colombia <small>(CLO)</small></a></li>
-                        <li><a href="#" data-code="CTG">Cartagena, Colombia <small>(CTG)</small></a></li>
-                        <li><a href="#" data-code="CUC">Cúcuta, Colombia <small>(CUC)</small></a></li>
-                        <li><a href="#" data-code="MDE">Medellín, Colombia <small>(MDE)</small></a></li>
-                        <li><a href="#" data-code="PEI">Pereira, Colombia <small>(PEI)</small></a></li>
-                        <li><a href="#" data-code="ADZ">San Andrés Isla, Colombia <small>(ADZ)</small></a></li>
                     </ul>
 
                     <h3>Ecuador</h3>
@@ -179,13 +325,14 @@
                         <li><a href="#" data-code="GYE">Guayaquil, Ecuador <small>(GYE)</small></a></li>
                         <li><a href="#" data-code="UIO">Quito, Ecuador <small>(UIO)</small></a></li>
                     </ul>
-                </div
-                ><div class="copaair-dest-select-col  copaair-dest-select-1/3">
+
                     <h3>Guyana</h3>
                     <ul class="copaair-dest-select-list">
                         <li><a href="#" data-code="GEO">Georgetown, Guyana <small>(GEO)</small></a></li>
                     </ul>
+                </div>
 
+                <div class="copaair-dest-column">
                     <h3>Paraguay</h3>
                     <ul class="copaair-dest-select-list">
                         <li><a href="#" data-code="ASU">Asunción, Paraguay <small>(ASU)</small></a></li>
@@ -207,65 +354,6 @@
                         <li><a href="#" data-code="CCS">Caracas, Venezuela <small>(CCS)</small></a></li>
                         <li><a href="#" data-code="MAR">Maracaibo, Venezuela <small>(MAR)</small></a></li>
                         <li><a href="#" data-code="VLN">Valencia, Venezuela <small>(VLN)</small></a></li>
-                    </ul>
-                </div>
-            </div
-            ><div class="copaair-dest-select-panel  copaair-dest-select-col  copaair-dest-select-2/3  copaair-hidden  js-copaair-dest-select-panel"
-                 id="copaair-tabpanel-centralamerica"
-                 role="tabpanel"
-                 aria-labelledby="copaair-tab-centralamerica"
-                 aria-hidden="true">
-                <div class="copaair-dest-select-col  copaair-dest-select-1/2">
-                    <h3>Costa Rica</h3>
-                    <ul class="copaair-dest-select-list">
-                        <li><a href="#" data-code="LIR">Liberia, Costa Rica <small>(LIR)</small></a></li>
-                        <li><a href="#" data-code="SJO">San José, Costa Rica <small>(SJO)</small></a></li>
-                    </ul>
-
-                    <h3>El Salvador</h3>
-                    <ul class="copaair-dest-select-list">
-                        <li><a href="#" data-code="SAL">San Salvador, El Salvador <small>(SAL)</small></a></li>
-                    </ul>
-
-                    <h3>Guatemala</h3>
-                    <ul class="copaair-dest-select-list">
-                        <li><a href="#" data-code="GUA">Ciudad de Guatemala, Guatemala <small>(GUA)</small></a></li>
-                    </ul>
-
-                    <h3>Honduras</h3>
-                    <ul class="copaair-dest-select-list">
-                        <li><a href="#" data-code="SAP">San Pedro Sula, Honduras <small>(SAP)</small></a></li>
-                        <li><a href="#" data-code="TGU">Tegucigalpa, Honduras <small>(TGU)</small></a></li>
-                    </ul>
-
-                    <h3>Nicaragua</h3>
-                    <ul class="copaair-dest-select-list">
-                        <li><a href="#" data-code="MGA">Managua, Nicaragua <small>(MGA)</small></a></li>
-                    </ul>
-
-                    <h3>Panamá</h3>
-                    <ul class="copaair-dest-select-list">
-                        <li><a href="#" data-code="DAV">David, Chiriquí, Panamá <small>(DAV)</small></a></li>
-                        <li><a href="#" data-code="PTY">Panamá, Panamá <small>(PTY)</small></a></li>
-                    </ul>
-                </div
-                ><div class="copaair-dest-select-col  copaair-dest-select-1/2">
-                    <h3>Caribe</h3>
-                    <ul class="copaair-dest-select-list">
-                        <li><a href="#" data-code="AUA">Aruba, Aruba <small>(AUA)</small></a></li>
-                        <li><a href="#" data-code="CUR">Curazao, Curazao <small>(CUR)</small></a></li>
-                        <li><a href="#" data-code="KIN">Kingston, Jamaica <small>(KIN)</small></a></li>
-                        <li><a href="#" data-code="HAV">La Habana, Cuba <small>(HAV)</small></a></li>
-                        <li><a href="#" data-code="MBJ">Montego Bay, Jamaica <small>(MBJ)</small></a></li>
-                        <li><a href="#" data-code="NAS">Nassau, Bahamas <small>(NAS)</small></a></li>
-                        <li><a href="#" data-code="POS">Puerto España, Trinidad y Tobago <small>(POS)</small></a></li>
-                        <li><a href="#" data-code="PAP">Puerto Príncipe, Haití <small>(PAP)</small></a></li>
-                        <li><a href="#" data-code="PUJ">Punta Cana, República Dominicana <small>(PUJ)</small></a></li>
-                        <li><a href="#" data-code="SJU">San Juan, Puerto Rico <small>(SJU)</small></a></li>
-                        <li><a href="#" data-code="SNU">Santa Clara, Cuba <small>(SNU)</small></a></li>
-                        <li><a href="#" data-code="STI">Santiago de los Caballeros, República Dominicana <small>(STI)</small></a></li>
-                        <li><a href="#" data-code="SDQ">Santo Domingo, República Dominicana <small>(SDQ)</small></a></li>
-                        <li><a href="#" data-code="SXM">St Maarten, St Maarten <small>(SXM)</small></a></li>
                     </ul>
                 </div>
             </div>

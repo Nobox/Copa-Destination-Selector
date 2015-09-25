@@ -2,20 +2,13 @@
 .copaair-hidden {
   display: none !important; }
 
-.copaair-dest-select-content {
-  margin-left: -12px; }
-
-.copaair-dest-select-col {
-  display: inline-block;
-  padding-left: 12px;
-  vertical-align: top; }
-
 .copaair-dest-select {
   position: fixed;
   top: 50%;
   left: 50%;
   width: 100%;
-  max-width: 830px;
+  box-sizing: border-box;
+  max-width: 900px;
   background-color: #fff;
   border: 8px solid #C9CACA;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
@@ -23,10 +16,15 @@
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+  .copaair-dest-select *,
+  .copaair-dest-select *:before,
+  .copaair-dest-select *:after {
+    box-sizing: inherit; }
 
 .copaair-dest-select-header {
-  margin: 0 0 24px;
+  margin: 0;
   padding: 15px;
+  background: -webkit-linear-gradient(top, #005AA6 0%, #00379A 100%);
   background: linear-gradient(to bottom, #005AA6 0%, #00379A 100%);
   border: 1px solid #052E4D;
   border-bottom: 2px solid #023A6B;
@@ -36,10 +34,26 @@
   font-weight: bold;
   line-height: 1; }
 
+.copaair-dest-select-content {
+  position: relative;
+  height: 500px; }
+
+.copaair-dest-column {
+  display: block;
+  float: left;
+  width: 33.3333%;
+  padding-left: 24px; }
+
 .copaair-dest-select-tablist {
-  margin-top: 0;
-  margin-bottom: 0;
-  min-height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 24px 0 0;
+  height: 100%;
+  width: 20%;
+  overflow: auto;
   list-style: none;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAGACAYAAACHubNDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANpJREFUSMfFVdsRwzAIE96v23ST7mv60+s1B8a8nObLpwASgsT0eL4IAA98nsuBIkguuHgY3VnjWPo50qIbRh2sEW9BEgg7loQuwUYMfmPcyGbnSSDfYBJZC4VGg3BIhSoDOjvW7JJ0045BQTV2OAxn3R/dOo8MivRVRJCSSvlR5sdEtQmG0ummReq0pcu60JLwP6ZzZx0cm7tbM4vfqY50DcW9ACyuEq71zhE3PMJ0CqQqL2J0RMrYBUuFBpeHlNdZ7Cg4U+nGYTYFz1R6e8Fig9ztM1Kv4p/DG1cei1SnsnOoAAAAAElFTkSuQmCC") no-repeat top right; }
   .copaair-dest-select-tablist > li {
@@ -59,7 +73,13 @@
     font-weight: bold; }
 
 .copaair-dest-select-panel {
-  margin-bottom: 12px; }
+  position: absolute;
+  top: 0;
+  left: 20%;
+  bottom: 0;
+  overflow: auto;
+  padding: 24px 24px 0 0;
+  width: 80%; }
   .copaair-dest-select-panel h3 {
     margin: 0 0 6px;
     color: #004982;
